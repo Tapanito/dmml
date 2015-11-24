@@ -1,7 +1,7 @@
 import sys
 import csv
 import math
-
+import operator
 
 def open_csv(filename):
     with open(filename, 'r') as f:
@@ -13,8 +13,10 @@ def open_csv(filename):
         return res
 
 
-def write_csv(filename, data, options='w'):
+def write_csv(filename, name, data, options='a'):
     with open(filename, options) as f:
+        f.write(name)
+        f.write('\n')
         for s in data:
             for i in s:
                 f.write(str(i) + ' ')
@@ -70,7 +72,7 @@ def to_int(lines):
 
 
 def main(argv):
-    script, filename = argv
+    filename = argv
     lines = open_csv(filename)
     lines = to_int(lines)
     del lines[len(lines)/2:]
@@ -80,8 +82,7 @@ def main(argv):
     for i in range(len(lines[0]) - 1):
        tmp = ppc(lines, i, len(lines[0]) - 1)
        print "Coleration betwwen {0} and {1} is: {2}".format(str(i+1), str(len(lines[0])), str(tmp))
-       res{i} = tmp
+       res[i] = abs(tmp)
 
-
-if __name__ == "__main__":
-    main(sys.argv)
+    newRes = sorted(res.items(), key=operator.itemgetter(1) , reverse=True)[:5]
+    write_csv('result.csv', filename, newRes)
