@@ -3,8 +3,9 @@ import sys
 
 def main():
     filename = "../opt{0}.txt"
+    tmp = []
     for i in range(10):
-        ppc.main(filename.format(str(i)))
+        tmp.append(ppc.main(filename.format(str(i))))
 
     
 

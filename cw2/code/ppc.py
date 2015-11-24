@@ -20,7 +20,7 @@ def write_csv(filename, name, data, options='a'):
         for s in data:
             for i in range(len(s)):
                 if(i == 0):
-                    f.write(str(s[i] + 1) + ', ')
+                    f.write(str(s[i]) + ', ')
                 else:
                     f.write(str(s[i]))
             f.write('\n')
@@ -88,4 +88,5 @@ def main(argv):
        res[i] = abs(tmp)
 
     newRes = sorted(res.items(), key=operator.itemgetter(1) , reverse=True)[:5]
+    return newRes
     write_csv('result.csv', filename, newRes)
