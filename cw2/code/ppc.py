@@ -19,7 +19,7 @@ def write_csv(filename, name, data, options='a'):
         f.write('\n')
         for s in data:
             for i in s:
-                f.write(str(i) + ' ')
+                f.write(str(i) + ', ')
             f.write('\n')
 
 
