@@ -18,8 +18,11 @@ def write_csv(filename, name, data, options='a'):
         f.write(name)
         f.write('\n')
         for s in data:
-            for i in s:
-                f.write(str(i) + ', ')
+            for i in range(len(s)):
+                if(i == 0):
+                    f.write(str(s[i] + 1) + ', ')
+                else:
+                    f.write(str(s[i]))
             f.write('\n')
 
 
