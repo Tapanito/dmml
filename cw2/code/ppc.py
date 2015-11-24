@@ -74,12 +74,13 @@ def main(argv):
     lines = open_csv(filename)
     lines = to_int(lines)
     del lines[len(lines)/2:]
-    print len(lines)
-    #return
+
+    res = {}
     # print lines
     for i in range(len(lines[0]) - 1):
        tmp = ppc(lines, i, len(lines[0]) - 1)
        print "Coleration betwwen {0} and {1} is: {2}".format(str(i+1), str(len(lines[0])), str(tmp))
+       res{i} = tmp
 
 
 if __name__ == "__main__":
