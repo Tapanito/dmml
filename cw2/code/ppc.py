@@ -42,9 +42,9 @@ def std(data, index, mean):
     for item in data:
         total += math.pow((int(item[index]) - mean), 2)
 
-    std = float(total) / float(len(data))
+    std = float(total) / float(len(data) - 1)
 
-    return std
+    return math.sqrt(std)
 
 
 def ppc(data, field_1, field_2):
