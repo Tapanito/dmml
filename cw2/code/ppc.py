@@ -73,7 +73,7 @@ def main(argv):
     script, filename = argv
     lines = open_csv(filename)
     lines = to_int(lines)
-
+    del lines[len(lines)/2:]
     # print lines
     for i in range(len(lines[0]) - 1):
        tmp = ppc(lines, i, len(lines[0]) - 1)
