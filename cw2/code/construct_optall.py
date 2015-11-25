@@ -32,8 +32,13 @@ def main(args):
             else:
                 for m in range(len(result)):
                     result[m].append(qq[m])
-    lines 
+    
+    lines = ppc.open_csv(filename.format('all'))
+    qq = column(lines, len(lines[0]) - 1)
+    for m in range(len(result)):
+        result[m].append(qq[m])
     write_csv('newopt{0}.txt'.format(str(size)), result)
+
     
 
 if __name__ == "__main__":
