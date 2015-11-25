@@ -17,7 +17,7 @@ def main(args):
     script, size = args
     tmp = []
     result = []
-    for i in range(1):
+    for i in range(10):
         tmp.append(ppc.main(filename.format(str(i))))
         lines = ppc.open_csv(filename.format(str(0)))
         lines = ppc.to_int(lines)
@@ -26,13 +26,13 @@ def main(args):
         for j in range(int(size)):
             qq = column(lines, tmp[i][j][0])
             if len(result) == 0:
-                for i in qq:
-                    result.append([i])
+                for k in qq:
+                    result.append([k])
             else:
-                for i in range(len(result)):
-                    result[i].append(qq[i])
+                for m in range(len(result)):
+                    result[m].append(qq[m])
 
-    print result
+    
 
 if __name__ == "__main__":
     main(sys.argv) 
