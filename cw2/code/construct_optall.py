@@ -21,7 +21,7 @@ def main(args):
     result = []
     for i in range(10):
         tmp.append(ppc.main(filename.format(str(i))))
-        lines = ppc.open_csv(filename.format(str(0)))
+        lines = ppc.open_csv(filename.format(str(i)))
         lines = ppc.to_int(lines)
         # i file first column key
         for j in range(int(size)):
@@ -32,6 +32,7 @@ def main(args):
             else:
                 for m in range(len(result)):
                     result[m].append(qq[m])
+    lines 
     write_csv('newopt{0}.txt'.format(str(size)), result)
     
 
