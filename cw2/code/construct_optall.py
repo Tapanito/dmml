@@ -5,10 +5,8 @@ import numpy as np
 def column(matrix, i):
     return [row[i] for row in matrix]
 
-def write_csv(filename, name, data, options='a'):
-    with open(filename, options) as f:
-        f.write(name)
-        f.write('\n')
+def write_csv(filename, data, options='a'):
+    with open(filename, options) as f:       
         for s in data:
             for i in range(len(s)):
                 f.write(str(s[i]) + ' ')
@@ -25,7 +23,6 @@ def main(args):
         tmp.append(ppc.main(filename.format(str(i))))
         lines = ppc.open_csv(filename.format(str(0)))
         lines = ppc.to_int(lines)
-        del lines[10:]
         # i file first column key
         for j in range(int(size)):
             qq = column(lines, tmp[i][j][0])
@@ -35,7 +32,7 @@ def main(args):
             else:
                 for m in range(len(result)):
                     result[m].append(qq[m])
-
+    write_csv('newopt{0}.txt'.format(str(size)), result)
     
 
 if __name__ == "__main__":
