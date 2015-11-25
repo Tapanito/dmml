@@ -16,17 +16,22 @@ def main(args):
     filename = "../opt{0}.txt"
     script, size = args
     tmp = []
+    result = []
     for i in range(1):
         tmp.append(ppc.main(filename.format(str(i))))
-    lines = ppc.open_csv(filename.format(str(0)))
-    lines = ppc.to_int(lines)
+        lines = ppc.open_csv(filename.format(str(0)))
+        lines = ppc.to_int(lines)
+        del lines[10:]
+        # i file first column key
+        for j in range(int(size)):
+            qq = column(lines, tmp[i][j][0])
+            if len(result) == 0:
+                for i in qq:
+                    result.append([i])
+            else:
+                for i in range(len(result)):
+                    result[i].append(qq[i])
 
-    del lines[10:]
-    # first file first column
-    qq = column(lines, tmp[0][0][0])
-    result = []
-    for i in qq:
-        result.append([i])
     print result
 
 if __name__ == "__main__":
