@@ -18,16 +18,16 @@ def main(args):
     tmp = []
     for i in range(1):
         tmp.append(ppc.main(filename.format(str(i))))
-    print tmp[0]    
     lines = ppc.open_csv(filename.format(str(0)))
     lines = ppc.to_int(lines)
 
     del lines[10:]
     # first file first column
-    qq = column(lines, tmp[0][tmp[0].keys()[0]])
+    qq = column(lines, tmp[0][0][0])
+    result = []
     for i in qq:
-        tmp.append([i])
-
+        result.append([i])
+    print result
 
 if __name__ == "__main__":
     main(sys.argv) 
