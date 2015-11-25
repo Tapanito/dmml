@@ -5,11 +5,15 @@ import numpy as np
 def column(matrix, i):
     return [row[i] for row in matrix]
 
-def print_opt(data):
+def write_csv(filename, name, data, options='a'):
     with open(filename, options) as f:
-            for s in data:
-                for i in range(len(s)):
-                    print str(i) + " "
+        f.write(name)
+        f.write('\n')
+        for s in data:
+            for i in range(len(s)):
+                f.write(str(s[i]) + ' ')
+
+            f.write('\n')
 
 
 def main(args):
