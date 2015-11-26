@@ -78,13 +78,13 @@ def main(argv):
     filename = argv
     lines = open_csv(filename)
     lines = to_int(lines)
-    del lines[len(lines)/2:]
+    del lines[:len(lines)/2]
 
     res = {}
     # print lines
     for i in range(len(lines[0]) - 1):
        tmp = ppc(lines, i, len(lines[0]) - 1)
-       print "Coleration betwwen {0} and {1} is: {2}".format(str(i+1), str(len(lines[0])), str(tmp))
+       #print "Coleration betwwen {0} and {1} is: {2}".format(str(i+1), str(len(lines[0])), str(tmp))
        res[i] = abs(tmp)
 
     newRes = sorted(res.items(), key=operator.itemgetter(1) , reverse=True)[:5]

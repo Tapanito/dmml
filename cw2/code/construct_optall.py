@@ -37,6 +37,7 @@ def main(args):
     qq = column(lines, len(lines[0]) - 1)
     for m in range(len(result)):
         result[m].append(qq[m])
+    print len(result[0])
     write_csv('newopt{0}.txt'.format(str(size)), result)
 
     
