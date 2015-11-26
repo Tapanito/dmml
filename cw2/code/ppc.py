@@ -78,7 +78,7 @@ def main(argv):
     filename = argv
     lines = open_csv(filename)
     lines = to_int(lines)
-    del lines[len(lines)/2:]
+    del lines[:len(lines)/2]
 
     res = {}
     # print lines
