@@ -47,7 +47,7 @@ def main(args):
     for m in range(len(result)):
         result[m].append(qq[m])
    
-    write_csv('newopt{0}.txt'.format(str(size)), result)
+    #write_csv('newopt{0}.txt'.format(str(size)), result)
     write_csv_2('best', tmp)
 
     
