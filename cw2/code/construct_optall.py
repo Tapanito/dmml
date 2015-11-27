@@ -17,9 +17,9 @@ def write_csv_2(filename, data, options='w'):
     with open(filename, options) as f:
         for s in data:
             for i in range(len(s)):
-                f.write(str(s[i]) + ' ')
+                f.write(str(s[i]) + ', ')
             f.write('\n')
-        f.write('----------------------------------\n')
+
 
 
 def main(args):
