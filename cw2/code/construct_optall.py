@@ -13,6 +13,15 @@ def write_csv(filename, data, options='w'):
 
             f.write('\n')
 
+def write_csv_2(filename, data, options='w'):
+    with open(filename, options) as f:
+        for s in data:
+            for i in range(len(s)):
+                for j in range(len(i)):
+                    f.write(str(s[j]) + ' ')
+                f.write('\n')
+            f.write('----------------------------------\n')
+
 
 def main(args):
     filename = "../opt{0}.txt"
@@ -37,8 +46,9 @@ def main(args):
     qq = column(lines, len(lines[0]) - 1)
     for m in range(len(result)):
         result[m].append(qq[m])
-    print len(result[0])
+   
     write_csv('newopt{0}.txt'.format(str(size)), result)
+    write_csv_2('best', tmp)
 
     
 
