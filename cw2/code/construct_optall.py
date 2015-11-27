@@ -17,10 +17,9 @@ def write_csv_2(filename, data, options='w'):
     with open(filename, options) as f:
         for s in data:
             for i in range(len(s)):
-                for j in range(len(i)):
-                    f.write(str(s[j]) + ' ')
-                f.write('\n')
-            f.write('----------------------------------\n')
+                f.write(str(s[i]) + ' ')
+            f.write('\n')
+        f.write('----------------------------------\n')
 
 
 def main(args):
@@ -30,24 +29,25 @@ def main(args):
     result = []
     for i in range(10):
         tmp.append(ppc.main(filename.format(str(i))))
-        lines = ppc.open_csv(filename.format(str(i)))
-        lines = ppc.to_int(lines)
-        # i file first column key
-        for j in range(int(size)):
-            qq = column(lines, tmp[i][j][0])
-            if len(result) == 0:
-                for k in qq:
-                    result.append([k])
-            else:
-                for m in range(len(result)):
-                    result[m].append(qq[m])
+    #     lines = ppc.open_csv(filename.format(str(i)))
+    #     lines = ppc.to_int(lines)
+    #     # i file first column key
+    #     for j in range(int(size)):
+    #         qq = column(lines, tmp[i][j][0])
+    #         if len(result) == 0:
+    #             for k in qq:
+    #                 result.append([k])
+    #         else:
+    #             for m in range(len(result)):
+    #                 result[m].append(qq[m])
     
-    lines = ppc.open_csv(filename.format('all'))
-    qq = column(lines, len(lines[0]) - 1)
-    for m in range(len(result)):
-        result[m].append(qq[m])
+    # lines = ppc.open_csv(filename.format('all'))
+    # qq = column(lines, len(lines[0]) - 1)
+    # for m in range(len(result)):
+    #     result[m].append(qq[m])
    
     #write_csv('newopt{0}.txt'.format(str(size)), result)
+    print tmp
     write_csv_2('best', tmp)
 
     
