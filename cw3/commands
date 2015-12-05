@@ -1,50 +1,51 @@
-./ers 65 100 5120 10 optraining.txt optesting.txt 16 12 10000 
-./ers 65 100 5120 10 optraining.txt optesting.txt 16 25 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 16 37 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 16 50 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 32 12 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 32 25 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 32 37 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 32 50 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 48 12 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 48 25 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 48 37 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 48 50 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 64 12 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 64 25 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 64 37 10000
-./ers 65 100 5120 10 optraining.txt optesting.txt 64 50 10000
-
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 12 10000 
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 25 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 37 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 50 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 12 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 25 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 37 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 50 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 12 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 25 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 37 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 50 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 12 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 25 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 37 10000
-./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 50 10000
-
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 12 10000 
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 25 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 37 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 50 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 12 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 25 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 37 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 50 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 12 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 25 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 37 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 50 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 12 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 25 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 37 10000
-./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 50 10000
+echo "100/5120" >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 16 12 10000  >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 16 25 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 16 37 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 16 50 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 32 12 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 32 25 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 32 37 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 32 50 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 48 12 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 48 25 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 48 37 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 48 50 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 64 12 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 64 25 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 64 37 10000 >> res
+./ers 65 100 5120 10 optraining.txt optesting.txt 64 50 10000 >> res
+echo "1000/4220" >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 12 10000  >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 25 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 37 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 16 50 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 12 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 25 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 37 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 32 50 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 12 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 25 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 37 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 48 50 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 12 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 25 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 37 10000 >> res
+./ers 65 1000 4220 10 optraining2.txt optesting2.txt 64 50 10000 >> res
+echo "2000/3220" >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 12 10000  >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 25 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 37 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 16 50 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 12 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 25 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 37 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 32 50 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 12 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 25 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 37 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 48 50 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 12 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 25 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 37 10000 >> res
+./ers 65 2000 3220 10 optraining3.txt optesting3.txt 64 50 10000 >> res
