@@ -1,5 +1,7 @@
-for WORD in `cat commands`
+while read line
 do
-   echo $WORD
-   command $WORD
-done
+   echo $line
+   $command $line >> "res"
+done < "commands"
+
+
