@@ -292,7 +292,7 @@ int print_rule(RULESET *r)
 {
   int i, j;
 
-  printf("\n");
+  //printf("\n");
 /*
   for(i=0;i<rulesperclass*nclasses;i++)
     {
