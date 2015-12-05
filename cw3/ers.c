@@ -1,4 +1,3 @@
-
 /*  a program for evolving rulesets 
 
 you may use it as long as you acknowledge me:   David Corne  dwcorne@gmail.com
@@ -91,7 +90,7 @@ int main(int argc,char **argv){
   iterations = atoi(argv[9]);
 
   randomize();
-
+  printf("%s, %s\n",argv[7], argv[8]);
   read_data(trainfile, nrows_train, nfields, &train_data);
 
   read_data(testfile, nrows_test, nfields, &test_data);
@@ -302,7 +301,8 @@ int print_rule(RULESET *r)
       printf("-> %d\n", r->rules[i].class);
     }
 */
-  printf("ACCURACY on training set %g\%\n\n", 100.0* r->acc);
+  //printf("ACCURACY on training set %g\%\n", 100.0* r->acc);
+  printf("%g\%\n", 100.0* r->acc);
 }
 
 int evaluate(RULESET *r)
@@ -378,7 +378,8 @@ int test_evaluate(RULESET *r)
 
   r->acc = (double)(corr)/(double)(nrows_test);
 
-  printf("TEST ACCURACY %g\%\n", 100.0* r->acc);
+  //printf("TEST ACCURACY %g\%\n", 100.0* r->acc);
+  printf("%g\%\n", 100.0* r->acc);
 }
 
 
